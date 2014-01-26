@@ -123,7 +123,7 @@ $country
 'KI'=>"Kiribati",
 'KM'=>"Comoros",
 'KN'=>"SaintKittsandNevis",
-'KP'=>"Korea,DemocraticPeople'sRepublicof",
+'KP'=>"Kore,DemocraticPeople'sRepublicof",
 'KR'=>"Korea,Republicof",
 'KW'=>"Kuwait",
 'KY'=>"CaymanIslands",
@@ -250,11 +250,8 @@ $country
 'ZM'=>"Zambia",
 'ZW'=>"Zimbabwe");
 $path=getcwd();
-foreach(glob($path.'/images1/*.*') as $file) {
-	$str=explode("/",$file);
-	$str=end($str);
-	$str=explode(".",$str);
-	$str=$str[0];
-    rename($file,$path.'/images2/'.$country[$str].'.png');
+foreach(glob($path.'/images0/*.*') as $file) {
+	$str=explode("_",$file);
+    rename($file,$path.'/images1/'.$str[1]);
 }
 ?>
