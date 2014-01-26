@@ -1,0 +1,9 @@
+A short php program to convert rename the country flags at
+https://www.iconfinder.com/search/?q=iconset%3Astripe-flag-set
+
+As per the list here:
+http://www.geoplugin.com/iso3166
+
+Index01.php converts the images in image0 having names of the form 045656_US.png to US.png in image1 folder
+
+Index12.php converts the images in image1 folder to names of the form UnitedStates.png in image2 folder
